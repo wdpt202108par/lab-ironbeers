@@ -28,4 +28,8 @@ app.get('/beers', (req, res) => {
   })
 });
 
+//app.get('/', (req, res) => {
+//  res.render('index');
+//}); pour pouvoir faire le commit
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
