@@ -5,3 +5,53 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    text-align: center;
+}
+
+/*nav bar*/
+.topnav {
+    background-color:#2081c3 ;
+    display:flex;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 4px 4px#bfbfbf;
+}
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f7f9f9;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #0a2c42;
+}
+
+.main-photo{
+    display: flex;
+    align-items: center;
+    
+}
+
+img{
+    padding-top: 100px;
+    max-width: 400px;
+}
+
+.button-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+button{
+    display: inline;
+    background-color:#2081c3;
+    padding: 15px;
+    width:200px;
+    align-items: center;
+}
