@@ -22,4 +22,10 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get('/beers', (req, res) => {
+  punkAPI.getBeers().then(function(beersFromAPI){
+    res.render('beers'); // fait ref à beers.hbs du dossier Views
+  })
+});
+
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
