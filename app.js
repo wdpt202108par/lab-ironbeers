@@ -26,12 +26,24 @@ app.get('/beers', (req, res) => {
   punkAPI
   .getBeers()
   .then(beersFromApi => {
-    console.log('Beers from the database: ', beersFromApi);  
-    res.render('beers', beersFromApi);
+    res.render('beers', {
+      beers: beersFromApi,
+    });
 })
   .catch(error => console.log(error));
 });
 
-
+app.get('/random-beer', (req, res) => {
+  punkAPI
+  .getRandom()
+  .then(responseFromAPI => {
+    // your magic happens here
+    console.log(responseFromAPI);
+    res.render('random-beer', {
+      randomBeer: responseFromAPI[0],
+    });
+  })
+  .catch(error => console.log(error));
+});
 
 app.listen(4400, () => console.log('🏃‍ on port 4400'));
