@@ -1,8 +1,5 @@
 <div>
-  <img src="{{randomBeer.image_url}}"/>
-  <h2>{{randomBeer.name}}</h2>
-  <h3>{{randomBeer.tagline}}</h3>
-  <article>{{randomBeer.description}}</article>
+  {{> beerpartial randomBeer}}
   <h3>Food Pairing</h3>
   <ul>
     {{#each randomBeer.food_pairing}}
