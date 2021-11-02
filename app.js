@@ -24,9 +24,20 @@ app.get('/', (req, res) => {
 
 app.get('/beers', (req, res) => {
   punkAPI.getBeers().then(function(beersFromAPI){
-    res.render('beers'); // fait ref à beers.hbs du dossier Views
+
+    res.render('beers', {
+      allbeers: beersFromAPI // [ {...}, {}, {}, ]
+    }); // fait ref à beers.hbs du dossier Views
   })
 });
+
+app.get('/random-beer', (req, res) =>{
+punkAPI.getRandom().then(function(randomBeer){
+res.render('random-beer', {singlebeer: randomBeer})
+
+
+});
+})
 
 //app.get('/', (req, res) => {
 //  res.render('index');

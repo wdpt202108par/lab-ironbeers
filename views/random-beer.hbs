@@ -1,10 +1,12 @@
 <ul>
-    {{#each allbeers}}
+    {{#each singlebeer}}
     <li>
         {{this.name}}
         {{this.image}}
         {{this.description}}
         {{this.tagline}}
+        {{this.food-pairing}}
+        {{this.brewer-tips}}
     </li>
     {{/each}}
 </ul>
