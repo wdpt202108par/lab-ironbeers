@@ -32,9 +32,9 @@ app.get('/beers', (req, res) => {
 });
 
 //
-app.get('/random-beers', (req, res) => {
+app.get('/random-beer', (req, res) => {
   punkAPI.getRandom()
-  .then(responseFromApI=> {res.render('random-beers', {data:responseFromApI} )
+  .then(responseFromAPI=> {res.render('random-beer', {data:responseFromAPI} )
 })
   .catch(error => console.log(error));
 });

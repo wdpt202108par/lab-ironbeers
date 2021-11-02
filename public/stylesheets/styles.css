@@ -41,7 +41,7 @@ body{
 
 img{
     padding-top: 100px;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .btn-div{
@@ -60,4 +60,9 @@ button{
     padding: 15px;
     width:200px;
     margin:10px;
+}
+
+/*random beer photo*/
+.beer-photo{
+    max-width:200px;
 }
