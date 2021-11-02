@@ -1,10 +1,7 @@
 <ul>
     {{#each allbeers}}
-    <li>
-        {{this.name}}
-        {{this.image}}
-        {{this.description}}
-        {{this.tagline}}
-    </li>
+        <div>
+         {{> beerpartial this}}
+        </div>
     {{/each}}
 </ul>

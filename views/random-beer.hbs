@@ -1,12 +1,9 @@
 <ul>
     {{#each singlebeer}}
     <li>
-        {{this.name}}
-        {{this.image}}
-        {{this.description}}
-        {{this.tagline}}
-        {{this.food-pairing}}
-        {{this.brewer-tips}}
+        {{> beerpartial this}}
+        {{this.food_pairing}}
+        {{this.brewer_tips}}
     </li>
     {{/each}}
 </ul>
