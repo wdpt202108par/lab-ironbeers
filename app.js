@@ -35,6 +35,29 @@ app.get('/beers', (request, response, next) => {
 
 });
 
+app.get('/random-beer', (request, response, next) => {
+        const randomBeer = punkAPI.getRandom()
+            // selectionner une bierre aléatoire
+        punkAPI.getRandom()
+        randomBeer.then(beer => {
+                console.log(beer)
+                    //console.log(beer[0].name)
+                response.render('random-beer', {
+                    randomBeer: beer[0]
+                })
+            })
+            //response.render('random-beer', { allBeers: beersFromApi }) // tableau d'objets
+    }) // une promesse
+;
+
+/*
+const randomBeer = PunkAPI.getRandom()
+
+randomBeer.then(beer => {
+  alert(beer[0].name)
+})
+*/
+
 //app.get()
 
 app.listen(3000, () => console.log('🏃‍ on port 3000'));
