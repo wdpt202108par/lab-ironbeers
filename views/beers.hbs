@@ -1,0 +1,7 @@
+<ul id="beers">
+  {{#each beersFromApi}}
+  <div id="beer">
+    <a href="/beers/{{id}}">{{> beerpartial this}}</a>
+  </div>
+  {{/each}}
+</ul>

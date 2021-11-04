@@ -1,0 +1,161 @@
+/*
+white: #f7f9f9;
+light-blue: #2081c3;
+dark-blue: #0a2c42;
+grey: #bfbfbf;
+font-family: Arial, Helvetica, sans-serif;
+*/
+body{
+    margin: 0;
+    padding:0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    position: relative;
+}
+
+nav {
+    background: #2081c3;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 40px;
+    box-shadow: 0px 3px 8px 0px #0000007d;
+}
+
+nav a{
+    text-decoration: none;
+    color: #f7f9f9;
+    background-color: #2081c3;
+    margin-left: 20px;
+}
+
+#homepage{
+    display: flex;
+    flex-direction: column;
+}
+
+#chope{
+    width:350px;
+    margin-left:auto; 
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.button{
+    text-decoration: none;
+    color: #f7f9f9;
+    background-color: #2081c3;
+    height: 35px;
+    width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    margin-right: auto;
+    margin-left:auto;
+    padding-top:10px;
+    box-shadow: 0px 3px 8px 0px #0000007d;
+}
+
+#button2{
+    width: 250px;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #0a2c42;
+    color: #f7f9f9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+}
+
+#beers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top:30px;
+}
+
+#beer{
+    width: 400px;
+    margin-top:30px;
+    margin-left: 40px;
+}
+
+#beer li{
+    display:flex;
+}
+
+#beer li img{
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+}    
+
+#beer .text{
+  padding-top: 10px;
+}
+
+#random img{
+    height: 250px;
+}
+
+#random #tagline{
+    padding-top: 30px;
+}
+
+#random .text{
+    padding-top:20px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul:last-child{
+    padding-bottom:100px;
+}
+
+ul p{
+    font-size:80%;
+    margin-bottom:0;
+    padding-top: 10px;
+}
+
+ol li{
+    list-style: initial;
+    padding-top: 10px;
+}
+
+#tagline{
+    color: #bfbfbf;
+    font-size: 80%;
+    padding-top: 5px;
+}
+
+#name{
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.text{
+    font-size:80%;
+    font-weight: normal;
+}
+
+span{
+    font-weight: bold;
+}
+
+#tips{
+    padding-top:20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
