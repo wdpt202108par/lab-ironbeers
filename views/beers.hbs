@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Ironbeers</title>
-</head>
-
-<body>
-  <ul>
-    {{#each beersFromApi}}
-      <li><img src="{{image_url}}"/></li>
-      <li>{{name}}</li>
-      <li>{{description}}</li>
-      <li>{{tagline}}</li>
-    {{/each}}
-  </ul>
-</body>
-
-</html>
+<ul id="beers">
+  {{#each beersFromApi}}
+  <div id="beer">
+    <a href="/beers/{{id}}">{{> beerpartial this}}</a>
+  </div>
+  {{/each}}
+</ul>
