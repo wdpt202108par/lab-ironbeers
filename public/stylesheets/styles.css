@@ -5,3 +5,41 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    display: flex;
+    height:100vh;
+    flex-direction:column;
+}
+
+nav {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width:100%;
+}
+
+ul {
+    display:flex;
+    list-style: none;
+    justify-content:flex-start;
+}
+
+li {
+    padding:20px;
+}
+
+.CheckBeers {
+    background-color: rgb(18, 130, 221);
+}
+
+.CheckRandom {
+    background-color: rgb(18, 130, 221);
+}
+
+.imgBeers{
+    height: 200px;
+    width:200px;
+    
+    
+}
